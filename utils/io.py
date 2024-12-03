@@ -3,6 +3,7 @@ import torch
 import yaml
 import re
 import json
+from pathlib import Path
 
 class HParams:
     def __init__(self, **kwargs):
@@ -41,7 +42,8 @@ def load_phones(path):
     
     phones_dict = {}
     for line in lines:
-        wav_id, language, phones, text = line.strip().split('|')
+        wav_path, language, phones, text = line.strip().split('|')
+        wav_id = Path(wav_path).stem
         phones_dict[wav_id] = [phones, text]
     return phones_dict
 

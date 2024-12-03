@@ -31,5 +31,5 @@ inference:
   top_k: 15
 
 output_dir: data/EN_B00005
-train_semantic_path: data/EN_B00005-semantic.txt
-train_phoneme_path: data/EN_B00005-wav2phone.txt
+train_semantic_path: data/EN_B0000567-semantic.txt
+train_phoneme_path: data/EN_B0000567-wav2phone.txt

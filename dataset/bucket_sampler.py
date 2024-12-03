@@ -107,7 +107,7 @@ class DistributedBucketSampler(Sampler[T_co]):
         if len(cur) > 0:
             buckets.append(cur)
             boundary.append(max_sec)
-        logger.debug(f"buckets with boundary [{' '.join(boundary)}]")
+        logger.debug(f"buckets with boundary {boundary}")
         return buckets
 
     def __iter__(self) -> Iterator[T_co]:

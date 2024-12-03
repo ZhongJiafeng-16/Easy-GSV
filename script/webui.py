@@ -19,7 +19,7 @@ from modules.cnhubert import CNHubert
 from text.cleaner import clean_text, cleaned_text_to_sequence
 from faster_whisper import WhisperModel
 
-g_gpt_weight_root = ["/home/zhongjiafeng/repo/GPT-SoVITS/GPT_SoVITS/pretrained_models"]
+g_gpt_weight_root = ["/home/zhongjiafeng/repo/GPT-SoVITS/GPT_SoVITS/pretrained_models","/home/zhongjiafeng/repo/Easy-GSV/pretrain"]
 g_sovits_wigth_root = ["/home/zhongjiafeng/repo/GPT-SoVITS/GPT_SoVITS/pretrained_models"]
 
 g_ssl_model = None
